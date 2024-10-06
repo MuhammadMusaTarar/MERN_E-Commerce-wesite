@@ -13,6 +13,7 @@ import ShoppingHome from "./pages/shopping-view/home";
 import ShoppingListing from "./pages/shopping-view/listing";
 import ShoppingCheckout from "./pages/shopping-view/checkout";
 import ShoppingAccount from "./pages/shopping-view/account";
+import UnAuthenticated from "./pages/unAuth";
 function App() {
   return (
     <div className="flex flex-col overflow-hidden bg-white">
@@ -37,6 +38,7 @@ function App() {
         </Route>
 
         <Route path="*" element={<NotFound />} />
+        <Route path="/unAuth" element={<UnAuthenticated/>}/>
       </Routes>
     </div>
   );
